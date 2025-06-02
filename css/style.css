@@ -11,11 +11,20 @@
     --cor-card: #fff8fb;
 }
 
-body {
-    
+body {  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--cor-texto);
+    background-color: var(--cor-fundo) !important;
 }
+
+    .btn-primary {
+        background-color: var(--cor-botao) !important;
+        border-color: white !important;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--cor-botao-hover) !important;
+        border-color: white !important;
+    }
 
 header {
     background-color: var(--cor-header) !important;
@@ -36,17 +45,6 @@ header {
         font-weight: bold;
         font-size: 18px;
     }
-
-    .btn-primary {
-        background-color: var(--cor-botao) !important;
-        border-color: white !important;
-    }
-
-    .btn-primary:hover {
-        background-color: var(--cor-botao-hover) !important;
-        border-color: white !important;
-    }
-
     .navbar-nav {
         color: var(--cor-texto) !important;
         font-weight: normal;
@@ -55,11 +53,13 @@ header {
 
 main {
     .sobre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         .container {
             width: 100%;
             background-color: var(--cor-sobre);
-            padding-top: 40px;
-            padding-bottom: 20px;
+            padding: 40px 40px 10px;
             text-align: center;
             h2{
                 color: var(--cor-Titulo);
@@ -69,7 +69,7 @@ main {
             }
             p{
                 color: var(--cor-texto);
-                font-syze: 16px;
+                font-size: 16px;
             };
         }
     }
