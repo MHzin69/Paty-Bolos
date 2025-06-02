@@ -47,7 +47,20 @@
     </header>
 
 
-    <main></main>
+    <main>
+
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <h2>Bolos personalizados com amor e sabor</h2>
+                <p>Na Paty Bolos, cada detalhe importa! Criamos bolos artesanais sob medida para o seu gosto e ocasião.
+                    Você escolhe o sabor e a decoração, e nós entregamos um doce que encanta pelo visual e conquista
+                    pelo sabor. Ideal para aniversários, eventos e momentos especiais. Nossa missão é transformar sonhos
+                    em fatias de felicidade!</p>
+            </div>
+        </section>
+
+        </div>
+    </main>
 
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

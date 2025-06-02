@@ -1,47 +1,76 @@
 :root {
-  --cor-fundo: #fff0f5;
-  --cor-sobre: #ffe4ec;
-  --cor-Titulo: #c71585;
-  --cor-texto: #5a2a2a;
-  --cor-footer: #fce4ec;
-  --cor-titulo-secundario: #8b1e4d;
-  --cor-botao: #d63384;
-  --cor-botao-hover: #c2185b;
-  --cor-header: #ffc0cb;
-  --cor-card: #fff8fb;
+    --cor-fundo: #fff0f5;
+    --cor-sobre: #ffe4ec;
+    --cor-Titulo: #c71585;
+    --cor-texto: #5a2a2a;
+    --cor-footer: #fce4ec;
+    --cor-titulo-secundario: #8b1e4d;
+    --cor-botao: #d63384;
+    --cor-botao-hover: #c2185b;
+    --cor-header: #ffc0cb;
+    --cor-card: #fff8fb;
 }
 
 body {
-    background-color: var(--cor-fundo);
-    font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--cor-texto);
 }
 
-header{
+header {
     background-color: var(--cor-header) !important;
-    .logo{
-        img{
+
+    .logo {
+        img {
             height: 60px;
         }
     }
-    .navbar-nav{
+
+    .navbar-nav {
         margin-left: auto;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         margin-right: auto;
         color: var(--cor-Titulo) !important;
         font-weight: bold;
+        font-size: 18px;
     }
-    .btn-primary{
+
+    .btn-primary {
         background-color: var(--cor-botao) !important;
         border-color: white !important;
     }
+
     .btn-primary:hover {
         background-color: var(--cor-botao-hover) !important;
         border-color: white !important;
     }
+
     .navbar-nav {
         color: var(--cor-texto) !important;
-        font-weight:normal;
+        font-weight: normal;
+    }
+}
+
+main {
+    .sobre {
+        .container {
+            width: 100%;
+            background-color: var(--cor-sobre);
+            padding-top: 40px;
+            padding-bottom: 20px;
+            text-align: center;
+            h2{
+                color: var(--cor-Titulo);
+                font-weight: bold;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            p{
+                color: var(--cor-texto);
+                font-syze: 16px;
+            };
+        }
     }
 }
