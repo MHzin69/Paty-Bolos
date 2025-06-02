@@ -1,7 +1,7 @@
 :root {
   --cor-fundo: #fff0f5;
   --cor-sobre: #ffe4ec;
-  --cor-destaque: #c71585;
+  --cor-Titulo: #c71585;
   --cor-texto: #5a2a2a;
   --cor-footer: #fce4ec;
   --cor-titulo-secundario: #8b1e4d;
@@ -9,4 +9,27 @@
   --cor-botao-hover: #c2185b;
   --cor-header: #ffc0cb;
   --cor-card: #fff8fb;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-texto);
+}
+
+header{
+    background-color: var(--cor-header) !important;
+    .logo{
+        img{
+            height: 60px;
+        }
+    }
+    .navbar-nav{
+        margin-left: auto;
+    }
+    .navbar-brand{
+        margin-right: auto;
+        color: var(--cor-Titulo) !important;
+        font-weight: bold;
+    }
 }
