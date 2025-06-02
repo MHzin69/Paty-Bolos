@@ -32,4 +32,16 @@ header{
         color: var(--cor-Titulo) !important;
         font-weight: bold;
     }
+    .btn-primary{
+        background-color: var(--cor-botao) !important;
+        border-color: white !important;
+    }
+    .btn-primary:hover {
+        background-color: var(--cor-botao-hover) !important;
+        border-color: white !important;
+    }
+    .navbar-nav {
+        color: var(--cor-texto) !important;
+        font-weight:normal;
+    }
 }
