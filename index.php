@@ -47,10 +47,19 @@
     </header>
 
 
-    <main>
+    <main class="container">
+        <?php
+          $pagina = $_GET["param"] ?? "home";
 
-        
+          $pagina = "pages/{$pagina}.php";
 
+          if (file_exists($pagina)) {
+            include $pagina;
+          } else {
+            include "pages/erro.php";
+          }
+          
+        ?>
     </main>
 
     <footer></footer>

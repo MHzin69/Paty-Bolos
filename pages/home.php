@@ -1,4 +1,4 @@
-<section class="sobre" id="sobre">
+<section class="sobre text-center" id="sobre">
             <div class="container ">
 
                 <h2>Bolos personalizados com amor e sabor</h2>

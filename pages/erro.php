@@ -5,7 +5,7 @@
 A página que você está tentando acessar não existe ou foi removida!
 </h2>
 <p class="text-center">
-    <a href="index.php" class="btn btn-danger">
+    <a href="index.php" class="btn btn-primary">
         Voltar para a página inicial
     </a>    
 </p>
