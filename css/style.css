@@ -78,3 +78,20 @@ main {
     }
 }
 
+.carousel-item {
+    height: 400px; /* diminuir de 500px para 400px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.carousel-img {
+    max-width: 90%; /* limitar largura */
+    max-height: 90%; /* limitar altura */
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 10px; /* bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* sombra suave */
+}

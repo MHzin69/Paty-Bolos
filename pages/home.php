@@ -137,59 +137,60 @@
 <section id="decoracoes" class="decoracoes">
     <div class="container">
         <h2>Exemplos de Decorações</h2>
-    </div>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="imgBolos/deco01.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 1">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgBolos/deco01.jpg" class="d-block carousel-img" alt="Imagem de decoração 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco02.jpg" class="d-block carousel-img" alt="Imagem de decoração 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco03.jpg" class="d-block carousel-img" alt="Imagem de decoração 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco04.jpg" class="d-block carousel-img" alt="Imagem de decoração 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco05.jpg" class="d-block carousel-img" alt="Imagem de decoração 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco06.jpg" class="d-block carousel-img" alt="Imagem de decoração 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco07.jpg" class="d-block carousel-img" alt="Imagem de decoração 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco08.jpg" class="d-block carousel-img" alt="Imagem de decoração 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco09.jpg" class="d-block carousel-img" alt="Imagem de decoração 9">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco10.jpg" class="d-block carousel-img" alt="Imagem de decoração 10">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco11.jpg" class="d-block carousel-img" alt="Imagem de decoração 11">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco12.jpg" class="d-block carousel-img" alt="Imagem de decoração 12">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgBolos/deco13.jpg" class="d-block carousel-img" alt="Imagem de decoração 13">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco02.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 2">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco03.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 3">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco04.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 4">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco05.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 5">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco06.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 6">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco07.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 7">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco08.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 8">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco09.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 9">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco10.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 10">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco11.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 11">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco12.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 12">
-            </div>
-            <div class="carousel-item">
-                <img src="imgBolos/deco13.jpg" class="d-block w-100 h-25" alt="Imagem de decoração 13">
-            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
     </div>
 </section>
