@@ -59,6 +59,12 @@
 <section id="decoracoes" class="decoracoes">
     <div class="container">
         <h2>Exemplos de Decorações</h2>
+        <div class="d-flex">
+            <a href="mais-imagens.php" alt="Ver Mais" class="link ms-auto">
+                Ver Mais
+                <i class="fa-solid fa-arrow-right"></i>   
+            </a>
+        </div>
         <div class="row g-4">
             <?php
             if (isset($decoracoes) && is_array($decoracoes) && !empty($decoracoes)) {
@@ -69,9 +75,10 @@
                     ?>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card decoration-card h-100 shadow">
-                            <img src="<?php echo htmlspecialchars($caminho); ?>" class="decoration-img" alt="Decoração <?php echo $id; ?>">
-                                    
-                            
+                            <img src="<?php echo htmlspecialchars($caminho); ?>" class="decoration-img"
+                                alt="Decoração <?php echo $id; ?>">
+
+
                         </div>
                     </div>
                     <?php
