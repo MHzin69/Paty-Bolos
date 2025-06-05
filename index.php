@@ -52,7 +52,7 @@
           $pagina = $_GET["param"] ?? "home";
 
           $pagina = "pages/{$pagina}.php";
-
+        include 'sabores.php';   
           if (file_exists($pagina)) {
             include $pagina;
           } else {

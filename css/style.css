@@ -78,20 +78,56 @@ main {
     }
 }
 
-.carousel-item {
-    height: 400px; /* diminuir de 500px para 400px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f8f9fa;
-}
-
-.carousel-img {
-    max-width: 90%; /* limitar largura */
-    max-height: 90%; /* limitar altura */
-    width: auto !important;
-    height: auto !important;
-    object-fit: contain !important;
-    border-radius: 10px; /* bordas arredondadas */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* sombra suave */
-}
+.decoration-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .decoration-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .decoration-img {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .card-title {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .section-title {
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .btn-view {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-view:hover {
+            background: linear-gradient(45deg, #ff5252, #ff7979);
+            transform: scale(1.05);
+        }
