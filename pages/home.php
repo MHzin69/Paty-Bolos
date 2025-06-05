@@ -51,7 +51,7 @@
     <div class="container">
         <h2>Exemplos de Decorações</h2>
         <div class="d-flex">
-            <a href="mais-imagens.php" alt="Ver Mais" class="link ms-auto">
+            <a href="mais-imagens" alt="Ver Mais" class="link ms-auto">
                 Ver Mais
                 <i class="fa-solid fa-arrow-right"></i>   
             </a>

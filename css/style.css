@@ -48,13 +48,15 @@ header {
         color: var(--cor-texto) !important;
         font-weight: normal;
     }
-    .nav-item{
+
+    .nav-item {
         margin: 0 15px;
         font-size: 16px;
         color: var(--cor-texto) !important;
-        
+
     }
-    .nav-item:hover{
+
+    .nav-item:hover {
         transition: all 0.01s;
         font-size: 16.5px;
         text-decoration: underline !important;
@@ -87,79 +89,83 @@ main {
             ;
         }
     }
-    .sabores{
-        .sabor-nome{
-            .btn{
-                height:27px;
+
+    .sabores {
+        .sabor-nome {
+            .btn {
+                height: 27px;
                 width: 27px;
             }
         }
     }
+
     .decoracoes {
-        .decoration-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
+
+        .link {
+            text-decoration: none !important;
+            color: gray !important;
+            font-weight: bold;
+            font-size: 18px;
         }
 
-        .decoration-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .decoration-img {
-            height: 300px;
-            object-fit: cover;
-            width: 100%;
-        }
-
-        .card-body {
-            padding: 1.5rem;
-        }
-
-        .card-title {
-            color: #333;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .card-text {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        .section-title {
-            color: #333;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .btn-view {
-            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-            border: none;
-            border-radius: 25px;
-            color: white;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .btn-view:hover {
-            background: linear-gradient(45deg, #ff5252, #ff7979);
-            transform: scale(1.05);
-        }
-        .link{
-        text-decoration: none !important;
-        color: gray !important;
-        font-weight: bold;
-        font-size: 18px;
-    }
-        .link:hover{
+        .link:hover {
             color: var(--cor-Titulo) !important;
             text-decoration: underline !important;
         }
     }
-    
+
 }
 
+.decoration-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.decoration-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.decoration-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.section-title {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.btn-view {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+    background: linear-gradient(45deg, #ff5252, #ff7979);
+    transform: scale(1.05);
+}
