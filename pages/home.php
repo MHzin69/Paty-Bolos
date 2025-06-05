@@ -65,13 +65,13 @@
                 $contador = 0;
                 foreach ($decoracoes as $id => $caminho) {
                     if ($contador >= 4)
-                        break; // Limita a 4 cards
+                        break;
                     ?>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card decoration-card h-100 shadow">
-                            <img src="<?php echo htmlspecialchars($caminho); ?>" class="decoration-img" alt="Decoração <?php echo $id; ?>
+                            <img src="<?php echo htmlspecialchars($caminho); ?>" class="decoration-img" alt="Decoração <?php echo $id; ?>">
                                     
-                            </div>
+                            
                         </div>
                     </div>
                     <?php
@@ -79,7 +79,6 @@
                 }
             }
             ?>
-        </div>
         </div>
     </div>
 </section>
