@@ -38,15 +38,6 @@
         </tr>";
                 }
                 ?>
-
-
-                <!-- <tr class="sabor-container">
-                    <td class="sabor-nome">Fruta Abacaxi/Pessêgo
-                        <button class="btn btn-sm btn-outline-secondary btn-mini"
-                            onclick="mostrarIngredientes('igd1')">i</button>
-                        <div id="igd1" class="card-ingredientes"></div>
-                    </td>
-                    <td>R$45,00</td> -->
                 </tr>
             </tbody>
         </table>
