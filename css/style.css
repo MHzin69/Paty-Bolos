@@ -32,6 +32,12 @@ header {
             height: 60px;
         }
     }
+    .logo:hover {
+        img {
+            height: 61px;
+            transition: all 0.01s;
+        }
+    }
 
     .navbar-nav {
         margin-left: auto;
@@ -42,6 +48,11 @@ header {
         color: var(--cor-Titulo) !important;
         font-weight: bold;
         font-size: 18px;
+    }
+    .navbar-brand:hover {
+        color: var(--cor-Titulo) !important;
+        text-decoration: underline !important;
+        font-size: 19px;
     }
 
     .navbar-nav {
@@ -61,10 +72,12 @@ header {
         font-size: 16.5px;
         text-decoration: underline !important;
     }
+
 }
 
 main {
     .sobre {
+        margin-bottom: 50px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -91,6 +104,7 @@ main {
     }
 
     .sabores {
+        margin-bottom: 50px;
         .sabor-nome {
             .btn {
                 height: 27px;
@@ -100,7 +114,7 @@ main {
     }
 
     .decoracoes {
-
+        margin-bottom: 50px;
         .link {
             text-decoration: none !important;
             color: gray !important;
@@ -114,58 +128,78 @@ main {
         }
     }
 
-}
+    .decoration-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+    }
 
-.decoration-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-}
+    .decoration-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
 
-.decoration-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
+    .decoration-img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
 
-.decoration-img {
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
-}
+    .card-body {
+        padding: 20px;
+    }
 
-.card-body {
-    padding: 20px;
-}
+    .card-title {
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
 
-.card-title {
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
+    .card-text {
+        color: #666;
+        font-size: 0.9rem;
+    }
 
-.card-text {
-    color: #666;
-    font-size: 0.9rem;
-}
+    .section-title {
+        color: #333;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 
-.section-title {
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 2rem;
+    .btn-view {
+        background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .btn-view:hover {
+        background: linear-gradient(45deg, #ff5252, #ff7979);
+        transform: scale(1.05);
+    }
+    h2{
+        color: var(--cor-Titulo);
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+footer{
+    background-color: var(--cor-header) !important;
+    color: var(--cor-texto) !important;
     text-align: center;
-}
+    padding: 20px 0;
+    img{
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
 
-.btn-view {
-    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn-view:hover {
-    background: linear-gradient(45deg, #ff5252, #ff7979);
-    transform: scale(1.05);
 }

@@ -21,7 +21,7 @@
                     <img src="images\logoPatyBolos.png" alt="Paty Bolos" class="logo-img" title="Paty Bolos">
 
                 </a>
-                <a class="navbar-brand" href="#">Paty Bolos</a>
+                <a class="navbar-brand" href="index.php">Paty Bolos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -64,7 +64,17 @@
         ?>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <img src="images/logoPatyBolos.png" alt="logo Paty Bolos" class="logo-img">
+                    <h5>Paty Bolos</h5>
+                    <p>&copy; 2023 Paty Bolos. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
