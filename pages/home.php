@@ -13,7 +13,7 @@
 
     </div>
 </section>
-<section class="sabores">
+<section class="sabores" id="sabores">
     <div class="container">
         <h2>Sabores e Preços</h2>
         <table class="table table-bordered">

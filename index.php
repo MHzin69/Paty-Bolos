@@ -17,11 +17,10 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="logo" href="index.php">
+                <a class="navbar-brand logo" href="home">
                     <img src="images\logoPatyBolos.png" alt="Paty Bolos" class="logo-img" title="Paty Bolos">
-
+                    Paty Bolos
                 </a>
-                <a class="navbar-brand" href="index.php">Paty Bolos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,13 +30,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="home#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Sabores</a>
+                            <a class="nav-link active" href="home#sabores">Sabores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Decorações</a>
+                            <a class="nav-link active" href="mais-imagens">Decorações</a>
                         </li>
                         <li class="nav-item">
                             <button type="button" class="btn btn-primary">Faça seu Pedido</button>
@@ -79,6 +78,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
+    <!-- script botao ingredientes -->
+    <script>
+        function mostrarIngredientes(id) {
+            const card = document.getElementById(id);
+            if (card.style.display === "block") {
+                card.style.display = "none";
+            } else {
+                card.style.display = "block";
+            }
+        }    
 </body>
 
 </html>

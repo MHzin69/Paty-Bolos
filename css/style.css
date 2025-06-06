@@ -104,8 +104,14 @@ main {
     }
 
     .sabores {
+        h2{
+            color: var(--cor-Titulo) !important;
+            font-weight: bold;
+            font-size: 18px;
+        }
         margin-bottom: 50px;
         .sabor-nome {
+            color: var(--cor-texto) !important;
             .btn {
                 height: 27px;
                 width: 27px;
@@ -201,5 +207,4 @@ footer{
         margin: 0;
         font-size: 14px;
     }
-
 }

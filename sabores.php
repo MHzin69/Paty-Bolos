@@ -41,6 +41,17 @@ $sabores = [
     ]],
 ];
 
+if (isset($_GET['nome'])) {
+    $nome = $_GET['nome'];
+    foreach ($sabores as $sabor) {
+        if ($sabor['nome'] === $nome) {
+            echo implode(", ", $sabor['ingredientes']);
+            exit;
+        }
+    }
+    echo "Ingredientes não encontrados.";
+}
+
 $decoracoes = [
     1 => "imgBolos/deco01.jpg",
     2 => "imgBolos/deco02.jpg",
@@ -54,7 +65,6 @@ $decoracoes = [
     10 => "imgBolos/deco10.jpg",
     11 => "imgBolos/deco11.jpg",
     12 => "imgBolos/deco12.jpg",
-    13 => "imgBolos/deco13.jpg"
 ];
 ?>
 
