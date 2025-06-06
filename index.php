@@ -60,7 +60,7 @@
           } else {
             include "pages/erro.php";
           }
-          
+        
         ?>
     </main>
 
@@ -70,7 +70,7 @@
                 <div class="text-center">
                     <img src="images/logoPatyBolos.png" alt="logo Paty Bolos" class="logo-img">
                     <h5>Paty Bolos</h5>
-                    <p>&copy; 2023 Paty Bolos. Todos os direitos reservados.</p>
+                    <p>&copy; 2025 Paty Bolos. Todos os direitos reservados.</p>
                 </div>
             </div>
         </div>
