@@ -208,3 +208,27 @@ footer{
         font-size: 14px;
     }
 }
+.ingredientes-card {
+    background: #fff8fb;
+    border: 2px solid #d63384;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 830px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+.btn-fechar {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #d63384;
+}

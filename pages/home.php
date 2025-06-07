@@ -23,21 +23,30 @@
             </thead>
             <tbody>
                 <?php
-                foreach ($sabores as $sabor) {
-                    $id = htmlspecialchars($sabor['id'] ?? '');
-                    $nome = htmlspecialchars($sabor['nome'] ?? 'Sem nome');
-                    $preco = number_format($sabor['preco'] ?? 0, 2, ',', '.');
+      foreach ($sabores as $sabor) {
+        $nome = htmlspecialchars($sabor['nome']);
+        $id = strtolower(preg_replace('/[^a-z0-9]/i', '', $nome));
+        $preco = number_format($sabor['preco'], 2, ',', '.');
 
-                    echo "<tr class='sabor-container'>
-            <td class='sabor-nome'>{$nome}
-                <button class='btn btn-sm btn-outline-secondary btn-mini'
-                    onclick='mostrarIngredientes(\"igd{$id}\")'>i</button>
-                <div id='igd{$id}' class='card-ingredientes'></div>
-            </td>
-            <td>R$ {$preco}</td>
+        echo "<tr>
+          <td class='sabor-nome'>
+            {$nome}
+            <button class='btn btn-sm btn-outline-secondary btn-mini' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">i</button>
+          </td>
+          <td>R$ {$preco}</td>
+        </tr>
+        <tr id='linha-ing{$id}' class='linha-ingredientes' style='display:none'>
+          <td colspan='2'>
+            <div class='ingredientes-card'>
+              <button class='btn-fechar' onclick='fecharTodos()'>❌</button>
+              <div id='ing{$id}'></div>
+            </div>
+          </td>
         </tr>";
-                }
-                ?>
+      }
+      ?>
+
+                
                 </tr>
             </tbody>
         </table>
@@ -53,7 +62,7 @@
         <div class="d-flex">
             <a href="mais-imagens" alt="Ver Mais" class="link ms-auto">
                 Ver Mais
-                <i class="fa-solid fa-arrow-right"></i>   
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
         <div class="row g-4">

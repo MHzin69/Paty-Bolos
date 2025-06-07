@@ -7,9 +7,11 @@
     <title>Paty Bolos</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-... (truncado)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-... (truncado)" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -50,16 +52,16 @@
 
     <main class="container">
         <?php
-          $pagina = $_GET["param"] ?? "home";
+        $pagina = $_GET["param"] ?? "home";
 
-          $pagina = "pages/{$pagina}.php";
-        include 'sabores.php';   
-          if (file_exists($pagina)) {
+        $pagina = "pages/{$pagina}.php";
+        include 'sabores.php';
+        if (file_exists($pagina)) {
             include $pagina;
-          } else {
+        } else {
             include "pages/erro.php";
-          }
-        
+        }
+
         ?>
     </main>
 
@@ -81,14 +83,25 @@
 
     <!-- script botao ingredientes -->
     <script>
-        function mostrarIngredientes(id) {
-            const card = document.getElementById(id);
-            if (card.style.display === "block") {
-                card.style.display = "none";
-            } else {
-                card.style.display = "block";
-            }
-        }    
+        function mostrarIngredientes(nome, id) {
+            fecharTodos();
+            fetch('sabores.php?nome=' + encodeURIComponent(nome))
+                .then(res => res.text())
+                .then(texto => {
+                    const destino = document.getElementById('ing' + id);
+                    const linha = document.getElementById('linha-ing' + id);
+                    if (destino && linha) {
+                        destino.innerText = texto;
+                        linha.style.display = 'table-row';
+                    }
+                });
+        }
+
+        function fecharTodos() {
+            const linhas = document.querySelectorAll('.linha-ingredientes');
+            linhas.forEach(l => l.style.display = 'none');
+        }
+        </script>
 </body>
 
 </html>
