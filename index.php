@@ -111,12 +111,39 @@
         const form = document.getElementById('formFeedback');
         let etapa = 0;
 
+        // Criar estrelas para perguntas de 1 a 4
+        document.querySelectorAll('.estrelas').forEach(div => {
+            for (let i = 1; i <= 5; i++) {
+                const span = document.createElement('span');
+                span.innerText = '★';
+                span.classList.add('star');
+                span.dataset.valor = i;
+
+                span.addEventListener('click', () => {
+                    div.querySelectorAll('.star').forEach(s => s.classList.remove('selecionada'));
+                    for (let j = 0; j < i; j++) {
+                        div.querySelectorAll('.star')[j].classList.add('selecionada');
+                    }
+                    div.dataset.valor = i;
+                });
+
+                div.appendChild(span);
+            }
+        });
+
         btn.addEventListener('click', () => {
             const atual = perguntas[etapa];
-            const input = atual.querySelector('input, textarea');
+            const input = atual.querySelector('textarea');
+            const estrelas = atual.querySelector('.estrelas');
 
-            if (!input.value.trim()) {
-                alert("Por favor, responda antes de continuar.");
+            // validação
+            if (estrelas && !estrelas.dataset.valor) {
+                alert("Por favor, selecione uma nota.");
+                return;
+            }
+
+            if (input && input.value.trim() === "") {
+                alert("Por favor, insira um comentário.");
                 return;
             }
 
@@ -128,8 +155,26 @@
             } else {
                 form.classList.add('d-none');
                 finalMsg.classList.remove('d-none');
+                mostrarResumo();
             }
         });
+
+        function mostrarResumo() {
+            const respostas = [];
+
+            document.querySelectorAll('.estrelas').forEach(div => {
+                const pergunta = div.dataset.pergunta;
+                const valor = div.dataset.valor || "Sem resposta";
+                respostas.push(`${pergunta}: ${valor} estrela(s)`);
+            });
+
+            const comentario = document.querySelector('textarea')?.value.trim();
+            if (comentario) respostas.push(`Comentário: ${comentario}`);
+
+            console.log("📋 Resumo do feedback:");
+            console.log(respostas.join('\n'));
+        }
+
     </script>
 </body>
 

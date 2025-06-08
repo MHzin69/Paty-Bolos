@@ -235,10 +235,16 @@ footer{
   cursor: pointer;
   color: #d63384;
 }
-.pergunta {
-  display: none;
+.estrelas {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
 }
 
-.pergunta:not(.d-none) {
-  display: block;
+.estrelas .star.selecionada {
+  color: #ffc107;
+}
+
+.estrelas .star:hover {
+  color: #ffca2c;
 }
