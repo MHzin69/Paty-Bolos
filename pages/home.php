@@ -89,3 +89,14 @@
         </div>
     </div>
 </section>
+
+<section class="avalie">
+    <div class="container">
+        <div class="text-center">
+            <h2>Gostou? Avalie-nos!</h2>
+            <p>Se você já experimentou nossos bolos, deixe sua avaliação e ajude outras pessoas a conhecerem
+                nosso trabalho!</p>
+            <a href="feedback" alt="Avaliar" class="btn btn-primary">Avaliar</a>
+        </div>
+    </div>
+</section>

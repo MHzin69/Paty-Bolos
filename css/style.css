@@ -235,3 +235,10 @@ footer{
   cursor: pointer;
   color: #d63384;
 }
+.pergunta {
+  display: none;
+}
+
+.pergunta:not(.d-none) {
+  display: block;
+}

@@ -101,7 +101,36 @@
             const linhas = document.querySelectorAll('.linha-ingredientes');
             linhas.forEach(l => l.style.display = 'none');
         }
-        </script>
+    </script>
+
+    <!-- script para formulario de feedback-->
+    <script>
+        const perguntas = document.querySelectorAll('.pergunta');
+        const btn = document.getElementById('btnProximo');
+        const finalMsg = document.getElementById('mensagemFinal');
+        const form = document.getElementById('formFeedback');
+        let etapa = 0;
+
+        btn.addEventListener('click', () => {
+            const atual = perguntas[etapa];
+            const input = atual.querySelector('input, textarea');
+
+            if (!input.value.trim()) {
+                alert("Por favor, responda antes de continuar.");
+                return;
+            }
+
+            atual.classList.add('d-none');
+            etapa++;
+
+            if (etapa < perguntas.length) {
+                perguntas[etapa].classList.remove('d-none');
+            } else {
+                form.classList.add('d-none');
+                finalMsg.classList.remove('d-none');
+            }
+        });
+    </script>
 </body>
 
 </html>
