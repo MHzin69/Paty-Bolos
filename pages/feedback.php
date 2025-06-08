@@ -6,23 +6,31 @@
             <h2 class="text-center mb-4">Formulário de Feedback</h2>
             <form id="formFeedback">
                 <div class="pergunta">
-                    <label class="form-label">1. Sabor</label>
+                    <label class="form-label">1. Nome</label>
+                    <input type="text" class="form-control" required />
+                </div>
+                <div class="pergunta d-none">
+                    <label class="form-label">2. WhatsApp (apenas números)</label>
+                    <input type="tel" class="form-control" pattern="\\d{10,14}" required />
+                </div>
+                <div class="pergunta d-none">
+                    <label class="form-label">3. Sabor</label>
                     <div class="estrelas" data-pergunta="Sabor"></div>
                 </div>
                 <div class="pergunta d-none">
-                    <label class="form-label">2. Apresentação</label>
+                    <label class="form-label">4. Apresentação</label>
                     <div class="estrelas" data-pergunta="Apresentação"></div>
                 </div>
                 <div class="pergunta d-none">
-                    <label class="form-label">3. Atendimento</label>
+                    <label class="form-label">5. Atendimento</label>
                     <div class="estrelas" data-pergunta="Atendimento"></div>
                 </div>
                 <div class="pergunta d-none">
-                    <label class="form-label">4. Você recomendaria a Paty Bolos?</label>
+                    <label class="form-label">6. Você recomendaria a Paty Bolos?</label>
                     <div class="estrelas" data-pergunta="Recomendaria"></div>
                 </div>
                 <div class="pergunta d-none">
-                    <label class="form-label">5. Comentários adicionais</label>
+                    <label class="form-label">7. Comentários adicionais</label>
                     <textarea class="form-control" rows="3"></textarea>
                 </div>
 
