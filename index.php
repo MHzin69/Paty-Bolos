@@ -41,7 +41,9 @@
                             <a class="nav-link active" href="mais-imagens">Decorações</a>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-primary">Faça seu Pedido</button>
+                            <button type="button" class="btn btn-primary">
+                                <a href="contato" class="b-link">Faça seu Pedido</a>    
+                            </button>
                         </li>
                     </ul>
                 </div>

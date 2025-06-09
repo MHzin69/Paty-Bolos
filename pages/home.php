@@ -9,7 +9,9 @@
             sonhos
             em fatias de felicidade!</p>
         <p>Entre em contato e descubra como podemos tornar seu evento ainda mais doce!</p>
-        <button type="button" class="btn btn-primary">Faça seu Pedido</button>
+        <button type="button" class="btn btn-primary">
+            <a href="contato" class="b-link">Faça seu Pedido</a> 
+        </button>
 
     </div>
 </section>
@@ -52,7 +54,9 @@
         </table>
         <hr>
         <div class="text-center">
-            <button type="button" class="btn btn-primary">Faça seu Pedido</button>
+            <button type="button" class="btn btn-primary">
+                <a href="contato">Faça seu Pedido</a> 
+            </button>
         </div>
 </section>
 

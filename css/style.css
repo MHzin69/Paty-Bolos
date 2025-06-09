@@ -193,7 +193,30 @@ main {
         font-size: 25px;
         margin-bottom: 20px;
     }
-    
+    .contato {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 100%;
+        background-color: var(--cor-sobre);
+        padding: 40px 40px 10px;
+
+        h2 {
+            color: var(--cor-Titulo);
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--cor-texto);
+            font-size: 16px;
+        }
+    }
+}
 
 }
 footer{
@@ -247,4 +270,11 @@ footer{
 
 .estrelas .star:hover {
   color: #ffca2c;
+}
+
+.b-link{
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: bold;
+    font-size: 18px;
 }
