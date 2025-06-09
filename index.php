@@ -133,18 +133,29 @@
 
         btn.addEventListener('click', () => {
             const atual = perguntas[etapa];
-            const input = atual.querySelector('textarea');
+            const input = atual.querySelector('textarea') || atual.querySelector('input[type="text"]');
             const estrelas = atual.querySelector('.estrelas');
+            const numeroInput = atual.querySelector('input[type="tel"]');
 
-            // validação
+            // validação de estrelas
             if (estrelas && !estrelas.dataset.valor) {
-                alert("Por favor, selecione uma nota.");
+                exibirAlerta("Por favor, selecione uma nota.");
                 return;
             }
 
+            // validação de comentários e nome 
             if (input && input.value.trim() === "") {
-                alert("Por favor, insira um comentário.");
+                exibirAlerta("Por favor, preencha o campo.");
                 return;
+            }
+
+            // validação de telefone
+            if (numeroInput) {
+                const numero = numeroInput.value.trim();
+                if (!/^[0-9]{10,14}$/.test(numero)) {
+                    exibirAlerta("Digite um número de telefone válido.");
+                    return;
+                }
             }
 
             atual.classList.add('d-none');
@@ -158,6 +169,7 @@
                 mostrarResumo();
             }
         });
+
 
         function mostrarResumo() {
             const respostas = [];
@@ -173,6 +185,16 @@
 
             console.log("📋 Resumo do feedback:");
             console.log(respostas.join('\n'));
+        }
+
+        function exibirAlerta(mensagem) {
+            const alerta = document.getElementById('alertaErro');
+            alerta.innerText = mensagem;
+            alerta.classList.remove('d-none');
+
+            setTimeout(() => {
+                alerta.classList.add('d-none');
+            }, 3000);
         }
 
     </script>

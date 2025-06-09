@@ -39,10 +39,11 @@
                 </div>
             </form>
 
-
+            <div id="alertaErro" class="alert alert-danger d-none text-center mt-3" role="alert"></div>
             <div id="mensagemFinal" class="alert alert-success d-none text-center mt-4">
                 Obrigado pelo seu feedback! 💖
             </div>
         </div>
     </div>
 </div>
+<div id="alertaErro" class="alert alert-danger d-none text-center mt-3" role="alert"></div>
