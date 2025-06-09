@@ -55,7 +55,7 @@
         <hr>
         <div class="text-center">
             <button type="button" class="btn btn-primary">
-                <a href="contato">Faça seu Pedido</a> 
+                <a href="contato" class="b-link">Faça seu Pedido</a> 
             </button>
         </div>
 </section>
