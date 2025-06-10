@@ -9,7 +9,7 @@
             sonhos
             em fatias de felicidade!</p>
         <p>Entre em contato e descubra como podemos tornar seu evento ainda mais doce!</p>
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" title="Faça seu Pedido">
             <a href="contato" class="b-link">Faça seu Pedido</a> 
         </button>
 
@@ -54,7 +54,7 @@
         </table>
         <hr>
         <div class="text-center">
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-primary" title="Faça seu Pedido">
                 <a href="contato" class="b-link">Faça seu Pedido</a> 
             </button>
         </div>
@@ -64,7 +64,7 @@
     <div class="container">
         <h2>Exemplos de Decorações</h2>
         <div class="d-flex">
-            <a href="mais-imagens" alt="Ver Mais" class="link ms-auto">
+            <a href="mais-imagens" alt="Ver Mais" class="link ms-auto" title="Ver Mais Decorações">
                 Ver Mais
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -100,7 +100,7 @@
             <h2>Gostou? Avalie-nos!</h2>
             <p>Se você já experimentou nossos bolos, deixe sua avaliação e ajude outras pessoas a conhecerem
                 nosso trabalho!</p>
-            <a href="feedback" alt="Avaliar" class="btn btn-primary">Avaliar</a>
+            <a href="feedback" alt="Avaliar" class="btn btn-primary" title="Avalie-nos">Avaliar</a>
         </div>
     </div>
 </section>

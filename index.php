@@ -19,8 +19,8 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="home">
-                    <img src="images\logoPatyBolos.png" alt="Paty Bolos" class="logo-img" title="Paty Bolos">
+                <a class="navbar-brand logo" href="home" title="Paty Bolos">
+                    <img src="images\logoPatyBolos.png" alt="Paty Bolos" class="logo-img">
                     Paty Bolos
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,16 +32,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home#sobre">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="home#sobre" title="Sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="home#sabores">Sabores</a>
+                            <a class="nav-link active" href="home#sabores" title="Sabores">Sabores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="mais-imagens">Decorações</a>
+                            <a class="nav-link active" href="mais-imagens" title="Decorações">Decorações</a>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-primary">
+                            <type="button" class="btn btn-primary" title="Faça seu Pedido">
                                 <a href="contato" class="b-link">Faça seu Pedido</a>    
                             </button>
                         </li>
