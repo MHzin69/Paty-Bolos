@@ -33,7 +33,7 @@
         echo "<tr>
           <td class='sabor-nome'>
             {$nome}
-            <button class='btn btn-sm btn-outline-secondary btn-mini' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">i</button>
+            <button class='btn btn-sm btn-outline-secondary btn-mini' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">i</button>
           </td>
           <td>R$ {$preco}</td>
         </tr>
@@ -64,7 +64,7 @@
     <div class="container">
         <h2>Exemplos de Decorações</h2>
         <div class="d-flex">
-            <a href="mais-imagens" alt="Ver Mais" class="link ms-auto" title="Ver Mais Decorações">
+            <a href="mais-imagens" alt="Ver Mais" class="link ms-auto ver" title="Ver Mais Decorações">
                 Ver Mais
                 <i class="fa-solid fa-arrow-right"></i>
             </a>

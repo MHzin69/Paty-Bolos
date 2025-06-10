@@ -191,6 +191,10 @@ main {
         font-size: 25px;
         margin-bottom: 20px;
     }
+
+    .ver{
+        margin-bottom: 8px;
+    }
     .contato {
     
     justify-content: center;
@@ -208,10 +212,11 @@ main {
         p {
             color: var(--cor-texto);
             font-size: 16px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
         a{
-            margin-bottom: 50px;
+            font-size: 30px;
+            margin-top: 15px;
 
         }
     }
