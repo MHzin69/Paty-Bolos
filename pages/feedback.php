@@ -11,7 +11,7 @@
                 </div>
                 <div class="pergunta d-none">
                     <label class="form-label">2. WhatsApp (apenas números)</label>
-                    <input type="tel" class="form-control" pattern="\\d{10,14}" required />
+                    <input type="tel" class="form-control" pattern="\\d{10,14}" id="numeroInput" required />
                 </div>
                 <div class="pergunta d-none">
                     <label class="form-label">3. Sabor</label>
