@@ -33,7 +33,7 @@
         echo "<tr>
           <td class='sabor-nome'>
             {$nome}
-            <button class='btn btn-sm btn-outline-secondary btn-mini' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">i</button>
+            <button class='btn btn-primary' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">Ingredientes</button>
           </td>
           <td>R$ {$preco}</td>
         </tr>

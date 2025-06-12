@@ -14,4 +14,10 @@
         }
         ?>
     </div>
+    <div class="text-center mais-imgs">
+        <a href="home" class="btn btn-primary" title="Voltar para a página inicial" alt="Voltar para a página inicial">
+            Voltar para a Página Inicial
+            <i class="fa-solid fa-arrow-left"></i>  
+        </a>
+    </div>
 </div>

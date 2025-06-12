@@ -17,6 +17,7 @@ body {
 .btn-primary {
     background-color: var(--cor-botao) !important;
     border-color: white !important;
+    border-radius: 25px !important  ;
 }
 
 .btn-primary:hover {
@@ -110,10 +111,18 @@ main {
         margin-bottom: 50px;
         .sabor-nome {
             color: var(--cor-texto) !important;
-            .btn {
-                height: 27px;
-                width: 27px;
-            }
+        }
+        .btn-primary{
+                margin-left: 8px;
+                padding: 4px 10px;
+                border-radius: 25px;
+                background-color: #e76993 !important;
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+                border: none;
+                cursor: pointer;
+            
         }
     }
 
@@ -281,4 +290,10 @@ footer{
     color: white !important;
     font-weight: bold;
     font-size: 18px;
+}
+
+.mais-imgs{
+    .btn{
+        margin-top: 20px;
+    }
 }
