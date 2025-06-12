@@ -112,7 +112,7 @@ main {
         .sabor-nome {
             color: var(--cor-texto) !important;
         }
-        .btn-primary{
+        .btn-ing{
                 margin-left: 8px;
                 padding: 4px 10px;
                 border-radius: 25px;

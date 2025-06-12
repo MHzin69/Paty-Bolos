@@ -1,20 +1,4 @@
-<section class="sobre text-center" id="sobre">
-    <div class="container ">
 
-        <h2>Bolos personalizados com amor e sabor</h2>
-        <p>Na Paty Bolos, cada detalhe importa! Criamos bolos artesanais sob medida para o seu gosto e
-            ocasião.
-            Você escolhe o sabor e a decoração, e nós entregamos um doce que encanta pelo visual e conquista
-            pelo sabor. Ideal para aniversários, eventos e momentos especiais. Nossa missão é transformar
-            sonhos
-            em fatias de felicidade!</p>
-        <p>Entre em contato e descubra como podemos tornar seu evento ainda mais doce!</p>
-        <button type="button" class="btn btn-primary" title="Faça seu Pedido">
-            <a href="contato" class="b-link">Faça seu Pedido</a> 
-        </button>
-
-    </div>
-</section>
 <section class="sabores" id="sabores">
     <div class="container">
         <h2>Sabores e Preços</h2>
@@ -33,7 +17,7 @@
         echo "<tr>
           <td class='sabor-nome'>
             {$nome}
-            <button class='btn btn-primary' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">Ingredientes</button>
+            <button class='btn btn-primary btn-ing' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">Ingredientes</button>
           </td>
           <td>R$ {$preco}</td>
         </tr>
@@ -93,7 +77,23 @@
         </div>
     </div>
 </section>
+<section class="sobre text-center" id="sobre">
+    <div class="container ">
 
+        <h2>Bolos personalizados com amor e sabor</h2>
+        <p>Na Paty Bolos, cada detalhe importa! Criamos bolos artesanais sob medida para o seu gosto e
+            ocasião.
+            Você escolhe o sabor e a decoração, e nós entregamos um doce que encanta pelo visual e conquista
+            pelo sabor. Ideal para aniversários, eventos e momentos especiais. Nossa missão é transformar
+            sonhos
+            em fatias de felicidade!</p>
+        <p>Entre em contato e descubra como podemos tornar seu evento ainda mais doce!</p>
+        <button type="button" class="btn btn-primary" title="Faça seu Pedido">
+            <a href="contato" class="b-link">Faça seu Pedido</a> 
+        </button>
+
+    </div>
+</section>
 <section class="avalie">
     <div class="container">
         <div class="text-center">
