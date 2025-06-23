@@ -39,11 +39,16 @@
                 </div>
                 
                 <div class="mt-4 text-center">
-                    <button type="button" id="btnVoltar" class="btn btn-primary">Voltar</button>
+                    <button type="button" id="btnVoltar" class="btn btn-primary">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Voltar
+                    </button>
+                    <button type="button" id="btnProximo" class="btn btn-primary">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        Próximo
+                    </button>
                 </div>
-                <div class="mt-4 text-center">
-                    <button type="button" id="btnProximo" class="btn btn-primary">Próximo</button>
-                </div>
+                
             </form>
 
             <div id="alertaErro" class="alert alert-danger d-none text-center mt-3" role="alert"></div>

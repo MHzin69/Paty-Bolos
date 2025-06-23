@@ -301,3 +301,13 @@ footer{
 #progressBar {
   background-color: var(--cor-botao) !important;
 }
+
+#btnVoltar {
+  background-color: gray !important;
+  border-color: white !important;
+  border-radius: 25px !important;
+}
+#btnVoltar:hover {
+  background-color: darkgray !important;
+  border-color: white !important;
+}

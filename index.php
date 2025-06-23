@@ -189,6 +189,11 @@
                 finalMsg.classList.remove('d-none');
                 mostrarResumo();
             }
+
+            if (etapaAtual < totalEtapas) {
+                etapaAtual++;
+                atualizarBarra();
+            }
         });
 
 
@@ -251,10 +256,6 @@
 
         // Clica no botão e avança
         document.getElementById("btnProximo").addEventListener("click", () => {
-            if (etapaAtual < totalEtapas) {
-                etapaAtual++;
-                atualizarBarra();
-            }
         });
 
         // Inicializa
