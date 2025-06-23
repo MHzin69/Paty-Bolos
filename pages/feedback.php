@@ -37,7 +37,10 @@
                     <label class="form-label">7. Comentários adicionais</label>
                     <textarea class="form-control" rows="3"></textarea>
                 </div>
-
+                
+                <div class="mt-4 text-center">
+                    <button type="button" id="btnVoltar" class="btn btn-primary">Voltar</button>
+                </div>
                 <div class="mt-4 text-center">
                     <button type="button" id="btnProximo" class="btn btn-primary">Próximo</button>
                 </div>
