@@ -113,7 +113,7 @@
         const form = document.getElementById('formFeedback');
         let etapa = 0;
 
-        // Criar estrelas para perguntas de 1 a 4
+        // Criar estrelas para perguntas
         document.querySelectorAll('.estrelas').forEach(div => {
             for (let i = 1; i <= 5; i++) {
                 const span = document.createElement('span');
@@ -121,18 +121,18 @@
                 span.classList.add('star');
                 span.dataset.valor = i;
 
-              
+
                 span.addEventListener('click', () => {
                     div.dataset.valor = i;
                     pintarEstrelas(div, i);
                 });
 
-               
+
                 span.addEventListener('mouseover', () => {
                     pintarEstrelas(div, i);
                 });
 
-               
+
                 span.addEventListener('mouseout', () => {
                     const valor = parseInt(div.dataset.valor) || 0;
                     pintarEstrelas(div, valor);
@@ -142,7 +142,7 @@
             }
         });
 
-        
+
         function pintarEstrelas(div, valor) {
             const stars = div.querySelectorAll('.star');
             stars.forEach((star, idx) => {
@@ -236,6 +236,29 @@
         });
 
 
+    </script>
+    <!-- Script para a barra de proguesso do formulário -->
+    <script>
+        // Total de etapas
+        const totalEtapas = 7;
+        let etapaAtual = 1;
+
+        // Atualiza a barra de progresso
+        function atualizarBarra() {
+            const porcentagem = (etapaAtual - 1) / totalEtapas * 100;
+            document.getElementById("progressBar").style.width = `${porcentagem}%`;
+        }
+
+        // Clica no botão e avança
+        document.getElementById("btnProximo").addEventListener("click", () => {
+            if (etapaAtual < totalEtapas) {
+                etapaAtual++;
+                atualizarBarra();
+            }
+        });
+
+        // Inicializa
+        atualizarBarra();
     </script>
 </body>
 
