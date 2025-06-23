@@ -5,7 +5,7 @@
         <div class="card p-4 shadow">
             <h2 class="text-center mb-4">Formulário de Feedback</h2>
             <div class="progress mb-3">
-                <div id="progressBar" class="progress-bar bg-pink" role="progressbar" style="width: 0%;"
+                <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;"
                     aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <form id="formFeedback">

@@ -297,3 +297,7 @@ footer{
         margin-top: 20px;
     }
 }
+
+#progressBar {
+  background-color: var(--cor-botao) !important;
+}
