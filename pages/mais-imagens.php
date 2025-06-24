@@ -2,7 +2,7 @@
     <div class="row g-2">
 
         <h2 class="text-center display-4 text-primary fw-bold mb-3 h2t">
-            Mais Exemplos de Decorações
+            Decorações
         </h2>
         <?php
         foreach ($decoracoes as $id => $caminho) {

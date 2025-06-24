@@ -169,11 +169,7 @@ main {
 }
 
     .sabores {
-        h2 {
-            color: var(--cor-Titulo) !important;
-            font-weight: bold;
-            font-size: 18px;
-        }
+        
 
         margin: 50px 0;
 
@@ -270,7 +266,8 @@ main {
 
     .h2t {
         color: var(--cor-Titulo);
-        margin: 50px 0;
+        margin-top: 50px;
+        margin-bottom: 20px !important;
     }
 
     .ver {

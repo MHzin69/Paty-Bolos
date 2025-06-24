@@ -1,6 +1,6 @@
 <section class="sabores" id="sabores">
     <div class="container">
-        <h2>Sabores e Preços</h2>
+        <h2 class="text-center display-4 text-primary fw-bold mb-3 h2t">Sabores e Preços</h2>
         <table class="table table-bordered">
             <thead>
                 <th>Sabores</th>
