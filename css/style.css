@@ -117,39 +117,49 @@ main {
         object-fit: cover;
     }
 
+    .text-primary {
+    color: #d63384 !important;
+}
 
+.bg-primary {
+    background-color: #d63384 !important;
+}
 
+.btn-primary {
+    background-color: #d63384;
+    border-color: #d63384;
+}
 
+.btn-primary:hover {
+    background-color: #c02a6b;
+    border-color: #c02a6b;
+}
 
+.value-card {
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
 
+.value-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #d63384, #ff6b9d);
+}
 
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
 
-    .sobre {
-        margin: 70px 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        .container {
-            width: 100%;
-            background-color: var(--cor-sobre);
-            padding: 40px 40px 10px;
-
-            h2 {
-                color: var(--cor-Titulo);
-                font-weight: bold;
-                font-size: 25px;
-                margin-bottom: 20px;
-            }
-
-            p {
-                color: var(--cor-texto);
-                font-size: 16px;
-            }
-
-            ;
-        }
-    }
+.btn-light{
+    border-radius: 25px !important;
+    border: solid 1px var(--cor-footer) !important;
+}
 
     .sabores {
         h2 {

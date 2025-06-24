@@ -36,10 +36,10 @@
                             <a class="nav-link active" aria-current="page" href="home" title="Início">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home#sobre" title="Sobre">Sobre</a>
+                            <a class="nav-link active" aria-current="page" href="sobre" title="Sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="home#sabores" title="Sabores">Sabores</a>
+                            <a class="nav-link active" href="tabela" title="Sabores">Sabores</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="mais-imagens" title="Decorações">Decorações</a>
