@@ -57,11 +57,14 @@ header {
             text-decoration: none !important;
             font-weight: bold;
         }
+        .nav-link:hover {
+        transition: all 0.01s;
+        font-size: 16.2px;
     }
-
+    }
     .nav-item:hover {
         transition: all 0.01s;
-        font-size: 16.5px;
+        transform: scale(1.1);
     }
 
     
@@ -214,7 +217,7 @@ main {
 
         .link:hover {
             color: var(--cor-Titulo) !important;
-            font-size: 18.5px;
+            transform: scale(1.1);
         }
         .btn{
             margin: 25px 0;
