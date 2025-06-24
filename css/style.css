@@ -75,6 +75,24 @@ header {
 }
 
 main {
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(2, 40% 60%);
+        .logoBanner{
+            display: flex;
+            margin-top: 20px;
+
+            img {
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+
+
     .sobre {
         margin: 70px 0;
         width: 100%;
