@@ -1,3 +1,43 @@
+<section class="banner">
+    <div class="container">
+        <div class="logoBanner">
+            <img src="images/logoPatyBolos.png" alt="Logo Paty Bolos" class="img-fluid">
+        </div>
+        <div class="carrosselBanner">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="sabores" id="sabores">
     <div class="container">
@@ -9,12 +49,12 @@
             </thead>
             <tbody>
                 <?php
-      foreach ($sabores as $sabor) {
-        $nome = htmlspecialchars($sabor['nome']);
-        $id = strtolower(preg_replace('/[^a-z0-9]/i', '', $nome));
-        $preco = number_format($sabor['preco'], 2, ',', '.');
+                foreach ($sabores as $sabor) {
+                    $nome = htmlspecialchars($sabor['nome']);
+                    $id = strtolower(preg_replace('/[^a-z0-9]/i', '', $nome));
+                    $preco = number_format($sabor['preco'], 2, ',', '.');
 
-        echo "<tr>
+                    echo "<tr>
           <td class='sabor-nome'>
             {$nome}
             <button class='btn btn-primary btn-ing' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">Ingredientes</button>
@@ -29,17 +69,17 @@
             </div>
           </td>
         </tr>";
-      }
-      ?>
+                }
+                ?>
 
-                
+
                 </tr>
             </tbody>
         </table>
         <hr>
         <div class="text-center">
             <button type="button" class="btn btn-primary" title="Faça seu Pedido">
-                <a href="contato" class="b-link">Faça seu Pedido</a> 
+                <a href="contato" class="b-link">Faça seu Pedido</a>
             </button>
         </div>
 </section>
@@ -89,7 +129,7 @@
             em fatias de felicidade!</p>
         <p>Entre em contato e descubra como podemos tornar seu evento ainda mais doce!</p>
         <button type="button" class="btn btn-primary" title="Faça seu Pedido">
-            <a href="contato" class="b-link">Faça seu Pedido</a> 
+            <a href="contato" class="b-link">Faça seu Pedido</a>
         </button>
 
     </div>

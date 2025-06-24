@@ -53,18 +53,18 @@ if (isset($_GET['nome'])) {
 }
 
 $decoracoes = [
-    1 => "imgBolos/deco01.jpg",
-    2 => "imgBolos/deco02.jpg",
-    3 => "imgBolos/deco03.jpg",
-    4 => "imgBolos/deco04.jpg",
-    5 => "imgBolos/deco05.jpg",
-    6 => "imgBolos/deco06.jpg",
-    7 => "imgBolos/deco07.jpg",
-    8 => "imgBolos/deco08.jpg",
-    9 => "imgBolos/deco09.jpg",
-    10 => "imgBolos/deco10.jpg",
-    11 => "imgBolos/deco11.jpg",
-    12 => "imgBolos/deco12.jpg",
+    1 => "images/imgBolos/deco01.jpg",
+    2 => "images/imgBolos/deco02.jpg",
+    3 => "images/imgBolos/deco03.jpg",
+    4 => "images/imgBolos/deco04.jpg",
+    5 => "images/imgBolos/deco05.jpg",
+    6 => "images/imgBolos/deco06.jpg",
+    7 => "images/imgBolos/deco07.jpg",
+    8 => "images/imgBolos/deco08.jpg",
+    9 => "images/imgBolos/deco09.jpg",
+    10 => "images/imgBolos/deco10.jpg",
+    11 => "images/imgBolos/deco11.jpg",
+    12 => "images/imgBolos/deco12.jpg",
 ];
 ?>
 
