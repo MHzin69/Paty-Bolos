@@ -97,7 +97,14 @@
 
     <!-- script botao ingredientes -->
     <script>
-        function mostrarIngredientes(nome, id) {
+    function mostrarIngredientes(nome, id) {
+        const linha = document.getElementById('linha-ing' + id);
+        
+        if (linha.style.display === 'table-row') {
+            // Se já está visível, esconde
+            linha.style.display = 'none';
+        } else {
+            // Esconde todos e mostra o clicado
             fecharTodos();
             fetch('sabores.php?nome=' + encodeURIComponent(nome))
                 .then(res => res.text())
@@ -110,11 +117,14 @@
                     }
                 });
         }
+    }
 
-        function fecharTodos() {
-            const linhas = document.querySelectorAll('.linha-ingredientes');
-            linhas.forEach(l => l.style.display = 'none');
-        }
+    function fecharTodos() {
+        const linhas = document.querySelectorAll('.linha-ingredientes');
+        linhas.forEach(l => l.style.display = 'none');
+    }
+</script>
+
     </script>
 
     <!-- script para formulario de feedback-->

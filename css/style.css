@@ -176,6 +176,17 @@ main {
         .sabor-nome {
             color: var(--cor-texto) !important;
         }
+        .preco {
+            color: var(--cor-botao) !important;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .thTitle {
+            color: var(--cor-Titulo) !important;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 22px;
+        }
 
         .btn-ing {
             margin-left: 8px;

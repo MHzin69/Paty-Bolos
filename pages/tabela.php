@@ -3,8 +3,8 @@
         <h2 class="text-center display-4 text-primary fw-bold mb-3 h2t">Sabores e Preços</h2>
         <table class="table table-bordered">
             <thead>
-                <th>Sabores</th>
-                <th>Preços(Kg)</th>
+                <th class="thTitle">Sabores</th>
+                <th class="thTitle">Preços(Kg)</th>
             </thead>
             <tbody>
                 <?php
@@ -16,9 +16,9 @@
                     echo "<tr>
           <td class='sabor-nome'>
             {$nome}
-            <button class='btn btn-primary btn-ing' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">Ingredientes</button>
+            <button class='btn btn-primary' title='Ver ingredientes' onclick=\"mostrarIngredientes('{$nome}', '{$id}')\">Ingredientes</button>
           </td>
-          <td>R$ {$preco}</td>
+          <td class='preco'>R$ {$preco}</td>
         </tr>
         <tr id='linha-ing{$id}' class='linha-ingredientes' style='display:none'>
           <td colspan='2'>
