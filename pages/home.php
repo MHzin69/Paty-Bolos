@@ -1,41 +1,37 @@
 <section class="banner">
-    <div class="container">
+    <div class="container layout-banner">
+
         <div class="logoBanner">
-            <img src="images/logoPatyBolos.png" alt="Logo Paty Bolos" class="img-fluid">
+            <img src="images/logoPatyBolos.png" alt="Logo Paty Bolos">
         </div>
+
         <div class="carrosselBanner">
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Indicators -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/imgBanner/banner01.png" class="d-block w-100" alt="Banner 01">
+                        <img src="images/imgBanner/banner01.png" class="d-block w-100" alt="Bolo 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/imgBanner/banner02.png" class="d-block w-100" alt="Banner 02">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/imgBanner/banner03.png" class="d-block w-100" alt="Banner 03">
+                        <img src="images/imgBanner/banner02.png" class="d-block w-100" alt="Bolo 2">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
         </div>
+
     </div>
 </section>
 

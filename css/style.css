@@ -17,7 +17,7 @@ body {
 .btn-primary {
     background-color: var(--cor-botao) !important;
     border-color: white !important;
-    border-radius: 25px !important  ;
+    border-radius: 25px !important;
 }
 
 .btn-primary:hover {
@@ -33,6 +33,7 @@ header {
             height: 90px;
         }
     }
+
     .logo:hover {
         img {
             height: 91px;
@@ -50,6 +51,7 @@ header {
         font-weight: bold;
         font-size: 18px;
     }
+
     .navbar-brand:hover {
         color: var(--cor-Titulo) !important;
         font-size: 19px;
@@ -75,21 +77,36 @@ header {
 }
 
 main {
-    .banner {
-        display: grid;
-        grid-template-columns: repeat(2, 40% 60%);
-        .logoBanner{
-            display: flex;
-            margin-top: 20px;
-
-            img {
-                height: 400px;
-                width: 400px;
-                border-radius: 50%;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-        }
+    .layout-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 20px 0;
     }
+
+    .logoBanner img {
+        height: 420px;
+        width: 420px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .carrosselBanner {
+        max-width: 600px;
+        flex: 1;
+    }
+
+    .carrosselBanner .carousel-inner img {
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+
+
+
 
 
 
@@ -121,31 +138,35 @@ main {
     }
 
     .sabores {
-        h2{
+        h2 {
             color: var(--cor-Titulo) !important;
             font-weight: bold;
             font-size: 18px;
         }
+
         margin: 50px 0;
+
         .sabor-nome {
             color: var(--cor-texto) !important;
         }
-        .btn-ing{
-                margin-left: 8px;
-                padding: 4px 10px;
-                border-radius: 25px;
-                background-color: #e76993 !important;
-                color: white;
-                font-weight: bold;
-                font-size: 12px;
-                border: none;
-                cursor: pointer;
-            
+
+        .btn-ing {
+            margin-left: 8px;
+            padding: 4px 10px;
+            border-radius: 25px;
+            background-color: #e76993 !important;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+
         }
     }
 
     .decoracoes {
         margin-bottom: 50px;
+
         .link {
             text-decoration: none !important;
             color: gray !important;
@@ -212,59 +233,68 @@ main {
         background: linear-gradient(45deg, #ff5252, #ff7979);
         transform: scale(1.05);
     }
-    h2{
+
+    h2 {
         color: var(--cor-Titulo);
         font-weight: bold;
         font-size: 25px;
         margin-bottom: 20px;
     }
 
-    .ver{
+    .ver {
         margin-bottom: 8px;
     }
+
     .contato {
-    
-    justify-content: center;
 
-    .container {
-        margin-bottom: 130px;
-        width: 100%;
-        padding: 50px 0px !important;
-        h2 {
-            color: var(--cor-Titulo);
-            font-weight: bold;
-            font-size: 25px;
-            margin-bottom: 30px;
-        }
-        p {
-            color: var(--cor-texto);
-            font-size: 16px;
-            margin-bottom: 50px;
-        }
-        a{
-            font-size: 30px;
-            margin-top: 15px;
+        justify-content: center;
 
+        .container {
+            margin-bottom: 130px;
+            width: 100%;
+            padding: 50px 0px !important;
+
+            h2 {
+                color: var(--cor-Titulo);
+                font-weight: bold;
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: var(--cor-texto);
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+
+            a {
+                font-size: 30px;
+                margin-top: 15px;
+
+            }
         }
     }
-}
 
 }
-footer{
+
+footer {
     background-color: var(--cor-header) !important;
     color: var(--cor-texto) !important;
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-    img{
+
+    img {
         height: 100px;
         margin-bottom: 10px;
     }
+
     p {
         margin: 0;
         font-size: 14px;
     }
 }
+
 .ingredientes-card {
     background: #fff8fb;
     border: 2px solid #d63384;
@@ -280,54 +310,56 @@ footer{
 }
 
 .btn-fechar {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background: transparent;
-  border: none;
-  font-size: 8px;
-  cursor: pointer;
-  color: #d63384;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+    color: #d63384;
 }
+
 .estrelas {
-  font-size: 2rem;
-  color: #ccc;
-  cursor: pointer;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
 }
 
 .estrelas .star.selecionada {
-  color: #ffc107;
+    color: #ffc107;
 }
 
 .estrelas .star:hover {
-  color: #ffca2c;
+    color: #ffca2c;
 }
 
-.b-link{
+.b-link {
     text-decoration: none !important;
     color: white !important;
     font-weight: bold;
     font-size: 18px;
 }
 
-.mais-imgs{
-    .btn{
+.mais-imgs {
+    .btn {
         margin-top: 20px;
     }
 }
 
 #progressBar {
-  background-color: var(--cor-botao) !important;
+    background-color: var(--cor-botao) !important;
 }
 
 #btnVoltar {
-  background-color: gray !important;
-  border-color: white !important;
-  border-radius: 25px !important;
+    background-color: gray !important;
+    border-color: white !important;
+    border-radius: 25px !important;
 }
+
 #btnVoltar:hover {
-  background-color: darkgray !important;
-  border-color: white !important;
+    background-color: darkgray !important;
+    border-color: white !important;
 }
 
 #paginaInicial {
