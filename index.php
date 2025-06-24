@@ -213,18 +213,18 @@
 
         const btnVoltar = document.getElementById('btnVoltar');
 
-        btnVoltar.addEventListener('click', () => {
-            if (etapa > 0) {
-                perguntas[etapa].classList.add('d-none');
-                etapa--;
-                perguntas[etapa].classList.remove('d-none');
+btnVoltar.addEventListener('click', () => {
+    if (etapa > 0) {
+        perguntas[etapa].classList.add('d-none');
+        etapa--;
+        perguntas[etapa].classList.remove('d-none');
 
-                if (etapaAtual > 1) {
-                    etapaAtual--;
-                    atualizarBarra();
-                }
-            }
-        });
+        if (etapaAtual > 1) {
+            etapaAtual--;
+            atualizarBarra();
+        }
+    }
+});
 
         function mostrarResumo() {
             const respostas = [];
