@@ -121,27 +121,31 @@ main {
     color: #d63384 !important;
 }
 
-.bg-primary {
+.pagina-sobre .text-primary {
+    color: #d63384 !important;
+}
+
+.pagina-sobre .bg-primary {
     background-color: #d63384 !important;
 }
 
-.btn-primary {
+.pagina-sobre .btn-primary {
     background-color: #d63384;
     border-color: #d63384;
 }
 
-.btn-primary:hover {
+.pagina-sobre .btn-primary:hover {
     background-color: #c02a6b;
     border-color: #c02a6b;
 }
 
-.value-card {
+.pagina-sobre .value-card {
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.value-card::before {
+.pagina-sobre .value-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -151,12 +155,12 @@ main {
     background: linear-gradient(90deg, #d63384, #ff6b9d);
 }
 
-.value-card:hover {
+.pagina-sobre .value-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
 }
 
-.btn-light{
+.pagina-sobre .btn-light{
     border-radius: 25px !important;
     border: solid 1px var(--cor-footer) !important;
 }
