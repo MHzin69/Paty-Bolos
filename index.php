@@ -74,8 +74,16 @@
             <div class="row">
                 <div class="text-center">
                     <img src="images/logoPatyBolos.png" alt="logo Paty Bolos" class="logo-img">
+                    <div class="avaliar">
+                        <h5>Gostou? Avalie-nos!</h5>
+                        <a href="feedback" class="link" title="Avaliar">
+                            <i class="fa-solid fa-star"></i>
+                            Avaliar
+                        </a>
+                    </div>
                     <h5>Paty Bolos</h5>
                     <p>&copy; 2025 Paty Bolos. Todos os direitos reservados.</p>
+                    <p>Desenvolvido por Murilo Henrique</p>
                 </div>
             </div>
         </div>

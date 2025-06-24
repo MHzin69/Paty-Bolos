@@ -39,6 +39,45 @@
         </div>
 
     </div>
+    <div class="text-center">
+    <button type="button" class="btn btn-primary " title="Faça seu Pedido">
+            <a href="contato" class="b-link">Faça seu Pedido</a>
+    </button>
+    </div>
+</section>
+
+<section id="decoracoes" class="decoracoes">
+    <div class="container">
+        <h2>Decorações</h2>
+        <div class="d-flex">
+            <a href="mais-imagens" alt="Ver Mais" class="link ms-auto ver" title="Ver Mais Decorações">
+                Ver Mais
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="row g-4">
+            <?php
+            if (isset($decoracoes) && is_array($decoracoes) && !empty($decoracoes)) {
+                $contador = 0;
+                foreach ($decoracoes as $id => $caminho) {
+                    if ($contador >= 4)
+                        break;
+                    ?>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card decoration-card h-100 shadow">
+                            <img src="<?php echo htmlspecialchars($caminho); ?>" class="decoration-img"
+                                alt="Decoração <?php echo $id; ?>">
+
+
+                        </div>
+                    </div>
+                    <?php
+                    $contador++;
+                }
+            }
+            ?>
+        </div>
+    </div>
 </section>
 
 <section class="sabores" id="sabores">
@@ -86,39 +125,7 @@
         </div>
 </section>
 
-<section id="decoracoes" class="decoracoes">
-    <div class="container">
-        <h2>Exemplos de Decorações</h2>
-        <div class="d-flex">
-            <a href="mais-imagens" alt="Ver Mais" class="link ms-auto ver" title="Ver Mais Decorações">
-                Ver Mais
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-        <div class="row g-4">
-            <?php
-            if (isset($decoracoes) && is_array($decoracoes) && !empty($decoracoes)) {
-                $contador = 0;
-                foreach ($decoracoes as $id => $caminho) {
-                    if ($contador >= 4)
-                        break;
-                    ?>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="card decoration-card h-100 shadow">
-                            <img src="<?php echo htmlspecialchars($caminho); ?>" class="decoration-img"
-                                alt="Decoração <?php echo $id; ?>">
 
-
-                        </div>
-                    </div>
-                    <?php
-                    $contador++;
-                }
-            }
-            ?>
-        </div>
-    </div>
-</section>
 <section class="sobre text-center" id="sobre">
     <div class="container ">
 
@@ -130,8 +137,8 @@
             sonhos
             em fatias de felicidade!</p>
         <p>Entre em contato e descubra como podemos tornar seu evento ainda mais doce!</p>
-        <button type="button" class="btn btn-primary" title="Faça seu Pedido">
-            <a href="contato" class="b-link">Faça seu Pedido</a>
+        <button type="button" class="btn btn-primary" title="Entre em contato">
+            <a href="contato" class="b-link">Entre em contato</a>
         </button>
 
     </div>
@@ -139,10 +146,12 @@
 <section class="avalie">
     <div class="container">
         <div class="text-center">
-            <h2>Gostou? Avalie-nos!</h2>
-            <p>Se você já experimentou nossos bolos, deixe sua avaliação e ajude outras pessoas a conhecerem
-                nosso trabalho!</p>
-            <a href="feedback" alt="Avaliar" class="btn btn-primary" title="Avalie-nos">Avaliar</a>
+            <h2>Gostou dos nossos bolos?</h2>
+            <p>Sua opinião é muito importante para nós! Avalie e nos ajude a melhorar ainda mais.</p>
+            <a href="feedback" alt="Avaliar" class="btn btn-primary" title="Avalie-nos">
+                <i class="fa-solid fa-star"></i>
+                Avaliar agora
+            </a>
         </div>
     </div>
 </section>
