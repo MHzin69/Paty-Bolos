@@ -61,7 +61,6 @@ header {
     }
     }
     .nav-item:hover {
-        transition: all 0.01s;
         transform: scale(1.1);
         
     }
