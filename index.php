@@ -20,7 +20,6 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="home" title="Paty Bolos">
-                    <img src="images\logoPatyBolos.png" alt="Paty Bolos" class="logo-img">
                     Paty Bolos
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,6 +30,9 @@
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home" title="Início">Início</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="home#sobre" title="Sobre">Sobre</a>
                         </li>
