@@ -42,3 +42,16 @@
             </button>
         </div>
 </section>
+
+<section class="avalie">
+    <div class="container">
+        <div class="text-center">
+            <h2>Gostou dos nossos bolos?</h2>
+            <p>Sua opinião é muito importante para nós! Avalie e nos ajude a melhorar ainda mais.</p>
+            <a href="feedback" alt="Avaliar" class="btn btn-primary" title="Avalie-nos">
+                <i class="fa-solid fa-star"></i>
+                Avaliar agora
+            </a>
+        </div>
+    </div>
+</section>

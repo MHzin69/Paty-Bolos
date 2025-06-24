@@ -40,8 +40,8 @@
 
     </div>
     <div class="text-center">
-    <button type="button" class="btn btn-primary " title="Faça seu Pedido">
-            <a href="contato" class="b-link">Faça seu Pedido</a>
+    <button type="button" class="btn btn-primary " title="Sabores e Preços">
+            <a href="tabela" class="b-link">Ver sabores</a>
     </button>
     </div>
 </section>
@@ -78,9 +78,12 @@
             ?>
         </div>
     </div>
+    <div class="text-center">
+    <button type="button" class="btn btn-primary " title="Sabores e Preços">
+            <a href="tabela" class="b-link">Ver sabores</a>
+    </button>
+    </div>
 </section>
-
-
 
 <section class="avalie">
     <div class="container">
