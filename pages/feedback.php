@@ -57,5 +57,11 @@
             </div>
         </div>
     </div>
+    <div id="paginaInicial">
+        <a href="home" class="btn btn-primary" title="Voltar para a página inicial" alt="Voltar para a página inicial">
+            Voltar para a Página Inicial
+            <i class="fa-solid fa-arrow-left"></i>  
+        </a>
+    </div>
 </div>
 <div id="alertaErro" class="alert alert-danger d-none text-center mt-3" role="alert"></div>

@@ -194,6 +194,9 @@
                 etapaAtual++;
                 atualizarBarra();
             }
+            if (etapaAtual >= 7) {
+                document.getElementById("paginaInicial").style.display = "block";
+            }
         });
 
 
@@ -246,11 +249,11 @@
     <script>
         // Total de etapas
         const totalEtapas = 7;
-        let etapaAtual = 1;
+        let etapaAtual = 0;
 
         // Atualiza a barra de progresso
         function atualizarBarra() {
-            const porcentagem = (etapaAtual - 1) / totalEtapas * 100;
+            const porcentagem = etapaAtual / totalEtapas * 100;
             document.getElementById("progressBar").style.width = `${porcentagem}%`;
         }
 
@@ -260,6 +263,8 @@
 
         // Inicializa
         atualizarBarra();
+
+
     </script>
 </body>
 
