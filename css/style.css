@@ -18,11 +18,14 @@ body {
     background-color: var(--cor-botao) !important;
     border-color: white !important;
     border-radius: 25px !important;
+    transition: transform 0.8s !important;
+    padding: 5px 16.5px !important;
 }
 
 .btn-primary:hover {
     background-color: var(--cor-botao-hover) !important;
     border-color: white !important;
+    transform: scale(1.1);
 }
 
 header {
